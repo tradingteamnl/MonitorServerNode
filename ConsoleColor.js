@@ -60,14 +60,15 @@ module.exports = {
     
     //error
     error: function(response){
-        return date().error +" [ERROR] "+response;
+        console.log(date().error +" [ERROR] "+response);
     },  
     //log
     log: function(response){
-        return date().info+ ' [INFO] '+response;
+        console.log(date().info+ ' [INFO] '+response);
+        //return date().info+ ' [INFO] '+response;
     },
     
     warn: function(response){
-        return  date().warn+" [WARN] "+response;
+        console.log(date().warn+" [WARN] "+response);
     }
 };
